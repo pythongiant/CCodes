@@ -59,8 +59,8 @@ int main(){
       for (int j = 0; j < 3; j++)
       {
          if(j%2!=0){
-            for(int m = j-1;m<3,m++){
-               twod_array[i][m] = twod_array[i][m+1]
+            for(int m = j-1;m<3;m++){
+               twod_array[i][m] = twod_array[i][m+1];
             }
             
          }
@@ -74,8 +74,8 @@ int main(){
       for (int j = 0; j < 3; j++)
       {
          if(j%2==0){
-            for(int m = j-1;m<3,m++){
-               twod_array[i][m] = twod_array[i][m+1]
+            for(int m = j-1;m<3;m++){
+               twod_array[i][m] = twod_array[i][m+1];
             }
             
          }
@@ -92,7 +92,7 @@ int main(){
       for (int j = 0; j < 3; j++)
       {
          if(twod_array[i][j] == element){
-            printf("Element Found in %d,%d",i,j)
+            printf("Element Found in %d,%d",i,j);
          }
       }
       
@@ -103,7 +103,7 @@ int position1,position2;
     
     printf("position =");
     scanf("%d,%d", &position1,&position2);
-    if (oned_array[position1][position2] != 0)
+    if(twod_array[position1][position2] != 0)
     {
         printf("Non Zero Value Is Present\n");
     }
